@@ -13,7 +13,7 @@ class CreateFundmonetiseTable extends Migration
      */
     public function up()
     {
-        Schema::table('fundmonetise', function (Blueprint $table) {
+        Schema::create('fundmonetise', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('fundid');
             $table->integer('rate');
@@ -28,8 +28,6 @@ class CreateFundmonetiseTable extends Migration
      */
     public function down()
     {
-        Schema::table('fundmonetise', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('fundmonetise');
     }
 }

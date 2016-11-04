@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFundsTable extends Migration
+class CreatFundsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,7 @@ class CreateFundsTable extends Migration
         Schema::create('funds', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->float('moneyamount');
+            $table->double('moneyamount',15,2);
             $table->integer('riskrate');
             $table->timestamps();
         });
