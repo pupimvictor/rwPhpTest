@@ -9,8 +9,8 @@ namespace App\models;
 
 
 
-use Illuminate\Database\Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-Class Client extends Eloquent\Model {
+Class Client extends Model{
 
 }
