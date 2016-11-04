@@ -11,7 +11,6 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-
 Class Client extends Model{
 
 }
