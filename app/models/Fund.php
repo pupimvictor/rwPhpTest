@@ -7,8 +7,8 @@
  */
 namespace App\models;
 
-use Illuminate\Database\Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-Class Fund extends Eloquent\Model {
+Class Fund extends Model  {
 
 }
