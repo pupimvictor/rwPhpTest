@@ -1538,3 +1538,83 @@ Stack trace:
 #38 /home/victorpupim/projects/rwPhpTest/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #39 /home/victorpupim/projects/rwPhpTest/server.php(21): require_once('/home/victorpup...')
 #40 {main}  
+[2016-11-07 03:51:33] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined method Illuminate\Foundation\Application::missing() in /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:237
+Stack trace:
+#0 /home/victorpupim/projects/rwPhpTest/routes/api.php(38): Illuminate\Support\Facades\Facade::__callStatic('missing', Array)
+#1 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(76): require('/home/victorpup...')
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Routing/Router.php(319): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\Routing\Router->group(Array, Object(Closure))
+#5 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(77): Illuminate\Support\Facades\Facade::__callStatic('group', Array)
+#6 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(38): App\Providers\RouteServiceProvider->mapApiRoutes()
+#7 [internal function]: App\Providers\RouteServiceProvider->map()
+#8 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#9 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(70): Illuminate\Container\Container->call(Array)
+#10 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(31): Illuminate\Foundation\Support\Providers\RouteServiceProvider->loadRoutes()
+#11 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(28): Illuminate\Foundation\Support\Providers\RouteServiceProvider->boot()
+#12 [internal function]: App\Providers\RouteServiceProvider->boot()
+#13 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#14 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(769): Illuminate\Container\Container->call(Array)
+#15 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(752): Illuminate\Foundation\Application->bootProvider(Object(App\Providers\RouteServiceProvider))
+#16 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(App\Providers\RouteServiceProvider), 15)
+#17 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(753): array_walk(Array, Object(Closure))
+#18 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#19 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#20 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(253): Illuminate\Foundation\Application->bootstrapWith(Array)
+#21 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->bootstrap()
+#22 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /home/victorpupim/projects/rwPhpTest/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 /home/victorpupim/projects/rwPhpTest/server.php(21): require_once('/home/victorpup...')
+#25 {main}  
+[2016-11-07 03:52:20] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined method Illuminate\Foundation\Application::missing() in /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:237
+Stack trace:
+#0 /home/victorpupim/projects/rwPhpTest/routes/web.php(20): Illuminate\Support\Facades\Facade::__callStatic('missing', Array)
+#1 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(58): require('/home/victorpup...')
+#2 [internal function]: App\Providers\RouteServiceProvider->App\Providers\{closure}(Object(Illuminate\Routing\Router))
+#3 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Routing/Router.php(319): call_user_func(Object(Closure), Object(Illuminate\Routing\Router))
+#4 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\Routing\Router->group(Array, Object(Closure))
+#5 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(59): Illuminate\Support\Facades\Facade::__callStatic('group', Array)
+#6 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(40): App\Providers\RouteServiceProvider->mapWebRoutes()
+#7 [internal function]: App\Providers\RouteServiceProvider->map()
+#8 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#9 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(70): Illuminate\Container\Container->call(Array)
+#10 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(31): Illuminate\Foundation\Support\Providers\RouteServiceProvider->loadRoutes()
+#11 /home/victorpupim/projects/rwPhpTest/app/Providers/RouteServiceProvider.php(28): Illuminate\Foundation\Support\Providers\RouteServiceProvider->boot()
+#12 [internal function]: App\Providers\RouteServiceProvider->boot()
+#13 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Container/Container.php(508): call_user_func_array(Array, Array)
+#14 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(769): Illuminate\Container\Container->call(Array)
+#15 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(752): Illuminate\Foundation\Application->bootProvider(Object(App\Providers\RouteServiceProvider))
+#16 [internal function]: Illuminate\Foundation\Application->Illuminate\Foundation\{closure}(Object(App\Providers\RouteServiceProvider), 15)
+#17 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(753): array_walk(Array, Object(Closure))
+#18 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\Foundation\Application->boot()
+#19 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\BootProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#20 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(253): Illuminate\Foundation\Application->bootstrapWith(Array)
+#21 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->bootstrap()
+#22 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /home/victorpupim/projects/rwPhpTest/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 /home/victorpupim/projects/rwPhpTest/server.php(21): require_once('/home/victorpup...')
+#25 {main}  
+[2016-11-07 04:08:14] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "routes" is not defined.
+
+Did you mean one of these?
+    route:cache
+    route:clear
+    route:list in /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php:536
+Stack trace:
+#0 /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('routes')
+#1 /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/victorpupim/projects/rwPhpTest/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2016-11-07 04:08:19] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "route" is not defined.
+
+Did you mean one of these?
+    route:cache
+    route:clear
+    route:list in /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php:536
+Stack trace:
+#0 /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php(184): Symfony\Component\Console\Application->find('route')
+#1 /home/victorpupim/projects/rwPhpTest/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/victorpupim/projects/rwPhpTest/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/victorpupim/projects/rwPhpTest/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  

@@ -708,9 +708,9 @@ EOF
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.php?r=site/login">Login</a>
+        <a href="/index_old.php?r=site/login">Login</a>
     </div>
-    <form id="login-form" action="/index.php?r=site/login" method="post">
+    <form id="login-form" action="/index_old.php?r=site/login" method="post">
         <button type="submit" name="Click 'Here'">Submit</button>
     </form>
 </body>
@@ -729,9 +729,9 @@ HTML;
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.php?r=site/login">Login</a>
+        <a href="/index_old.php?r=site/login">Login</a>
     </div>
-    <form id="login-form" action="/index.php?r=site/login" method="post">
+    <form id="login-form" action="/index_old.php?r=site/login" method="post">
         <button type="submit" name='Click "Here"'>Submit</button>
     </form>
 </body>
@@ -801,9 +801,9 @@ HTML;
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.php?r=site/login">Login</a>
+        <a href="/index_old.php?r=site/login">Login</a>
     </div>
-    <form id="login-form" action="/index.php?r=site/login" method="post">
+    <form id="login-form" action="/index_old.php?r=site/login" method="post">
         <button type="submit">Submit</button>
     </form>
 </body>

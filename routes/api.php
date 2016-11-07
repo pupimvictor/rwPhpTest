@@ -32,3 +32,8 @@ Route::group(['namespace' => 'Fund', 'prefix' => 'client'], function() {
     // Controllers Within The "App\Http\Controllers\client" Namespace
     Route::get('', ['clients' => 'ClientController@index']);
 });
+
+Route::any('{catchall}', function() {
+    //some code
+    return View::make('index');
+})->where('catchall', '.*');
