@@ -24,7 +24,7 @@ Route::group(['namespace' => 'Fund', 'prefix' => 'fund'], function() {
 
     Route::put('updatemoneyamount/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
-    Route::get('', ['funds' => 'FundController@index']);
+    Route::get('/', ['funds' => 'FundController@index']);
 
 });
 

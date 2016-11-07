@@ -95,7 +95,7 @@ class Facade
         );
 
         $directory->render($report, $target . 'index.html');
-        $dashboard->render($report, $target . 'dashboard.html');
+        $dashboard->render($report, $target . 'dashboard_old.html');
 
         foreach ($report as $node) {
             $id = $node->getId();
@@ -106,7 +106,7 @@ class Facade
                 }
 
                 $directory->render($node, $target . $id . '/index.html');
-                $dashboard->render($node, $target . $id . '/dashboard.html');
+                $dashboard->render($node, $target . $id . '/dashboard_old.html');
             } else {
                 $dir = dirname($target . $id);
 
