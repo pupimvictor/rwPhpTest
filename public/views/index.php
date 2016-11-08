@@ -16,11 +16,13 @@
     <script type="text/javascript" src="js/services/fundService.js"></script>
     <script type="text/javascript" src="js/routes.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
+
 <div id="wrapper">
 
     <!-- Sidebar -->

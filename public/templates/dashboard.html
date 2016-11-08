@@ -1,6 +1,18 @@
-<div ng-controller="fundController" class="row">
 
-    {{funds}}
+
+<div ng-controller="fundController" class="funds row">
+    <h2>Investiment Funds</h2>
+    <div class="row">
+        <div ng-repeat="fund in funds" class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{fund.name}}</h3>
+            </div>
+            <div class="panel-body">
+                {{fund.moneyamount}}
+            </div>
+        </div>
+
+    </div>
 
 </div>
 

@@ -1,0 +1,25 @@
+body{
+    width:1200px;
+    margin:auto;
+}
+
+#wrapper{
+    margin:auto;
+}
+
+#sidebar-wrapper{
+    float: left;
+    min-width: 300px;
+    margin-top: 40px;
+    background-color: #122b40;
+}
+
+#page-content-wrapper{
+    float: left;
+    min-width: 700px;
+    margin-top: 40px;
+}
+
+.sidebar-brand {
+    font-weight: bolder;
+}
