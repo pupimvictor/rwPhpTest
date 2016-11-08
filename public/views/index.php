@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">Investments</a>
+                <a href="#/investment">Investments</a>
             </li>
             <li>
                 <a href="#">Clients</a>

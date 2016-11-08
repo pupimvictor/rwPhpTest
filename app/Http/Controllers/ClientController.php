@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 
+use App\Http\Controllers\Controller;
 use App\models\Client;
 use Illuminate\Http\Request;
 

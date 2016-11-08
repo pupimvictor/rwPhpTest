@@ -18,22 +18,23 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 
-Route::group(['namespace' => 'Fund', 'prefix' => 'fund'], function() {
+Route::group(['prefix' => 'fund'], function () {
     // Controllers Within The "App\Http\Controllers\Fund" Namespace
     Route::put('updaterisk/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
     Route::put('updatemoneyamount/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
-    Route::get('/', ['funds' => 'FundController@index']);
+    Route::get('/', 'FundController@index');
+
 
 });
 
-Route::group(['namespace' => 'Fund', 'prefix' => 'client'], function() {
+Route::group(['namespace' => 'Fund', 'prefix' => 'client'], function () {
     // Controllers Within The "App\Http\Controllers\client" Namespace
     Route::get('', ['clients' => 'ClientController@index']);
 });
 
-Route::any('{catchall}', function() {
+Route::any('{catchall}', function () {
     //some code
     return View::make('index');
 })->where('catchall', '.*');

@@ -8,7 +8,7 @@ angular.module('RobustWealthApp')
         return {
             // get all the comments
             get: function () {
-                return $http.get('/api/fund');
+                return $http.get('/api/fund/');
             }
         }
     });

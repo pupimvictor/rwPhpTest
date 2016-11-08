@@ -15,9 +15,9 @@ angular.module('RobustWealthApp').config(['$stateProvider', '$urlRouterProvider'
                 url: '/',
                 templateUrl: 'templates/dashboard.html'
             })
-            .state('tables', {
-                url: '/tables',
-                templateUrl: '../templates/tables.html'
+            .state('investments', {
+                url: '/investment',
+                templateUrl: '../templates/investments.html'
             });
     }
 ]);
