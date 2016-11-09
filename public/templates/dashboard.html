@@ -1,5 +1,3 @@
-
-
 <div ng-controller="fundController" class="funds row">
     <h2>Investiment Funds</h2>
     <div class="row">
@@ -12,6 +10,34 @@
             </div>
         </div>
 
+    </div>
+
+    <div ng-controller="investmentController">
+        <h3>Last Investiments</h3>
+        <div class="row">
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fund</th>
+                    <th>Client</th>
+                    <th>Money Amount</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="investment in investments">
+                        <td>{{investment.id}}</td>
+                        <th>{{investment.name}}</th>
+                        <th>{{investment.name}}</th>
+                        <th>{{investment.moneyamount}}</th>
+                        <th>{{investment.date}}</th>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
     </div>
 
 </div>

@@ -4,21 +4,21 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use App\models\Client;
+use App\models\FundMonetise;
 use Illuminate\Http\Request;
 
 
 
-class ClientController extends Controller
+class FundMonetiseController extends Controller
 {
 
     /**
-     * Send all the Clients
+     * Send all the Fund Monetise
      *
      * @return mixed
      */
     public function index(){
-        return response()->json(Client::all());
+        return response()->json(FundMonetise::all());
     }
 
 }

@@ -14,6 +14,9 @@
     <script type="text/javascript" src="js/controllers/mainController.js"></script>
     <script type="text/javascript" src="js/controllers/fundController.js"></script>
     <script type="text/javascript" src="js/services/fundService.js"></script>
+    <script type="text/javascript" src="js/controllers/investmentController.js"></script>
+    <script type="text/javascript" src="js/services/investmentService.js"></script>
+
     <script type="text/javascript" src="js/routes.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/app.css">

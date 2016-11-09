@@ -16,18 +16,21 @@ class FundTableSeeder extends Seeder
         DB::table('funds')->delete();
 
         Fund::create(array(
+            'id' => 10,
             'name' => 'Fund A',
             'moneyamount' => 1000000.80,
             'riskrate' => 2
         ));
 
         Fund::create(array(
+            'id' => 11,
             'name' => 'Fund b',
             'moneyamount' => 3500000.00,
             'riskrate' => -2
         ));
 
         Fund::create(array(
+            'id' => 13,
             'name' => 'Fund C',
             'moneyamount' => 2500000.00,
             'riskrate' => 4

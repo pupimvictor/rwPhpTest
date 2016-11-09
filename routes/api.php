@@ -19,20 +19,30 @@ Route::get('/user', function (Request $request) {
 
 
 Route::group(['prefix' => 'fund'], function () {
-    // Controllers Within The "App\Http\Controllers\Fund" Namespace
+
     Route::put('updaterisk/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
     Route::put('updatemoneyamount/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
     Route::get('/', 'FundController@index');
-
-
 });
 
-Route::group(['namespace' => 'Fund', 'prefix' => 'client'], function () {
-    // Controllers Within The "App\Http\Controllers\client" Namespace
-    Route::get('', ['clients' => 'ClientController@index']);
+Route::group(['prefix' => 'client'], function () {
+
+    Route::get('/', 'ClientController@index');
 });
+
+Route::group(['prefix' => 'fundMonetise'], function () {
+
+    Route::get('/', 'FundMonetiseController@index');
+});
+
+Route::group(['prefix' => 'investment'], function () {
+
+    Route::get('/', 'InvestmentController@index');
+});
+
+
 
 Route::any('{catchall}', function () {
     //some code

@@ -11,4 +11,8 @@ use Illuminate\Database\Eloquent;
 
 Class FundMonetise extends Eloquent\Model {
 
+
+
+    protected $table = 'fundmonetises';
+    public $timestamps = false;
 }
