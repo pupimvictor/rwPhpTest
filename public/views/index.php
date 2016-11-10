@@ -30,21 +30,26 @@
 
 <div id="wrapper">
 
+
+    <div class="header">
+        <span class="title">Robust Wealth Php Test - Victor Pupim</span>
+
+    </div>
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand">
+            <li class="menu-item sidebar-brand">
                 <a href="#">
                     Dashboard
                 </a>
             </li>
-            <li>
+            <li class="menu-item sidebar-brand">
                 <a href="#/investment">Investments</a>
             </li>
-            <li>
+            <li class="menu-item sidebar-brand">
                 <a href="#">Clients</a>
             </li>
-            <li>
+            <li class="menu-item sidebar-brand">
                 <a href="#">Funds</a>
             </li>
         </ul>

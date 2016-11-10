@@ -1,25 +1,71 @@
 body{
     width:1200px;
     margin:auto;
+    background-color: #dbf0ff !important;
 }
 
 #wrapper{
     margin:auto;
 }
 
+.div-wrapper{
+    margin: 15px;
+    padding: 30px;
+    padding-top: 0px;
+    background-color: white;
+}
+
+.title{
+    padding: 4px;
+    top: 10px;
+    position: relative;
+    font-size: x-large;
+    font-weight: bolder;
+    color:whitesmoke;
+}
+
+.header{
+    background-image: url(http://wallpapercave.com/wp/d3TjUpj.jpg);
+    background-repeat: space;
+    background-position-y: -256px;
+    height: 55px;
+
+}
+
+.menu-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+ul{
+    list-style-type: none;
+}
+
 #sidebar-wrapper{
     float: left;
     min-width: 300px;
-    margin-top: 40px;
+    margin-top: 55px;
     background-color: #122b40;
+    position: relative;
+    top: -55px;
+    height: 1300px;
 }
 
 #page-content-wrapper{
     float: left;
-    min-width: 700px;
+    width: 850px;
     margin-top: 40px;
+    margin-left:15px;
+    position: relative;
+    top: -55px;
+
 }
 
 .sidebar-brand {
     font-weight: bolder;
+}
+
+.container-fluid{
+    padding: 0px !important;
 }

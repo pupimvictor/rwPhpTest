@@ -18,24 +18,9 @@ class FundController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function index(){
-        return response()->json(Fund::all());
+        $funds = FundOperations::listwUpDown();
+        return response()->json($funds);
     }
 
-    public function updateRisk(){
-        $fund = Fund::find(Input::get('id'));
-        $fund->riskrate = Input::get('newriskrate');
 
-        $fund->save();
-
-        return response()->json(array('success' => true));
-    }
-
-    public function updateMoneyAmount(){
-        $fund = Fund::find(Input::get('id'));
-        $fund->moneyamount = Input::get('newmoneyamount');
-
-        $fund->save();
-
-        return response()->json(array('success' => true));
-    }
 }

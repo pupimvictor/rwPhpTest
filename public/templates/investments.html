@@ -1,7 +1,7 @@
 <div ng-controller="investmentController">
-    <h2>Investments</h2>
-
-    <div class="row">
+    <div class="row div-wrapper">
+        <h2>Investments</h2>
+        <h3>New Investment</h3>
         <form id="newInvestimentForm" ng-submit="createInvestment()">
             <div class="form-group">
                 <label for="investmentclient">Client</label>
@@ -33,10 +33,21 @@
     </form>
 </div>
 
-<h3>Last Investiments</h3>
-<div class="row">
-    <table>
+
+<div class="row div-wrapper" >
+    <h3>Last Investments</h3>
+
+    <table class="table">
         <thead>
+        <label for="investmentFundSearch">Filter by Fund</label>
+        <select class="form-control" ng-model="search.fund" id="investmentFundSearch">
+            <option ng-repeat="fund in funds" value="{{fund.name}}">{{fund.name}}</option>
+        </select>
+        <label for="investmentFundOrder">Order by</label>
+        <select class="form-control" ng-model="search.order" id="investmentFundOrder">
+            <option value="-moneyamount">Money Amount</option>
+            <option value="-date">Date</option>
+        </select>
         <tr>
             <th>Id</th>
             <th>Fund</th>
@@ -46,7 +57,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="investment in investments">
+        <tr ng-repeat="investment in investments | filter: search.fund || '' | orderBy: search.order ">
             <td>{{investment.id}}</td>
             <th>{{investment.fund_name}}</th>
             <th>{{investment.client_name}}</th>

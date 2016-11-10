@@ -11,4 +11,6 @@ angular.module('RobustWealthApp')
             $scope.funds = funds;
         });
 
+        $scope.search.fund = "";
+
     });
