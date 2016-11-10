@@ -40,6 +40,12 @@ Route::group(['prefix' => 'fundMonetise'], function () {
 Route::group(['prefix' => 'investment'], function () {
 
     Route::get('/', 'InvestmentController@index');
+
+    Route::post('/', 'InvestmentController@save');
+});
+
+Route::get('/', function (){
+    \App\Services\FundOperations::calculateRisk(11);
 });
 
 

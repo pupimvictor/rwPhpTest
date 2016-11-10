@@ -11,4 +11,6 @@ use Illuminate\Database\Eloquent;
 
 Class Investment extends Eloquent\Model {
 
+    protected $fillable = ['clientid', 'fundid', 'moneyamount', 'date'];
+
 }

@@ -24,7 +24,7 @@ class FundTableSeeder extends Seeder
 
         Fund::create(array(
             'id' => 11,
-            'name' => 'Fund b',
+            'name' => 'Fund B',
             'moneyamount' => 3500000.00,
             'riskrate' => -2
         ));
