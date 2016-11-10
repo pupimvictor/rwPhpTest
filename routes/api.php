@@ -22,7 +22,7 @@ Route::group(['prefix' => 'fund'], function () {
 
     Route::put('updaterisk/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
 
-    Route::put('updatemoneyamount/{id}/{newriskrate}', ['success' => 'FundController@updateRisk']);
+    Route::put('fund/newInvestiment', ['success' => 'FundController@newInvestment']);
 
     Route::get('/', 'FundController@index');
 });

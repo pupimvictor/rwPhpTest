@@ -1,4 +1,11 @@
 <div ng-controller="investmentController">
+
+    <div class="row alerts-container" data-ng-show="alerts.length">
+        <div class="col-xs-12" >
+            <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" style="font-size: larger;" close="closeAlert($index)">{{alert.msg}}</uib-alert>
+        </div>
+    </div>
+
     <div class="row div-wrapper">
         <h2>Investments</h2>
         <h3>New Investment</h3>

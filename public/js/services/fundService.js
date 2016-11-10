@@ -9,6 +9,11 @@ angular.module('RobustWealthApp')
             // get all the comments
             get: function () {
                 return $http.get('/api/fund/');
+            },
+
+            updateMoneyAmount: function (id) {
+                return $http.put('api/fund/newInvestiment/', id);
             }
+
         }
     });

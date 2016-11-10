@@ -9,15 +9,21 @@ angular
 function AlertsCtrl($scope) {
     $scope.alerts = [{
         type: 'success',
-        msg: 'Thanks for visiting! Feel free to create pull requests to improve the dashboard!'
+        msg: 'The operation was conclued with succes, Thank you'
     }, {
         type: 'danger',
-        msg: 'Found a bug? Create an issue with as many details as you can.'
+        msg: 'Sorry, something goes wrong.'
     }];
 
-    $scope.addAlert = function() {
+    $scope.addSuccessAlert = function() {
         $scope.alerts.push({
-            msg: 'Another alert!'
+            type: 'success', msg: 'The operation was conclued with succes, Thank you'
+        });
+    };
+
+    $scope.addErrorAlert = function() {
+        $scope.alerts.push({
+            type: 'danger', msg: 'Sorry, something went wrong.'
         });
     };
 

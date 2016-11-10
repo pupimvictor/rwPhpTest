@@ -52,6 +52,15 @@ ul{
     height: 1300px;
 }
 
+.alerts-container{
+    background-color: greenyellow;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
 #page-content-wrapper{
     float: left;
     width: 850px;

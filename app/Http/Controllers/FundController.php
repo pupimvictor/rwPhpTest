@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers;
 
+use App\models\Investment;
 use App\Services\FundOperations;
 use App\models\Fund;
 use Illuminate\Support\Facades\Input;
@@ -20,6 +21,16 @@ class FundController extends Controller
     public function index(){
         $funds = FundOperations::listwUpDown();
         return response()->json($funds);
+    }
+
+    public function newInvestment(){
+        $investment = Investment::find(Input::get('id'));
+
+        $fund = Fund::find($investment['fundid']);
+        $fund['moneyamount'] += $investment['moneyamout'];
+
+        return response()->json('success');
+
     }
 
 
