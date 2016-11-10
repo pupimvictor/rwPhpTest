@@ -44,10 +44,6 @@ Route::group(['prefix' => 'investment'], function () {
     Route::post('/', 'InvestmentController@save');
 });
 
-Route::get('/', function (){
-    \App\Services\FundOperations::calculateRisk(11);
-});
-
 
 
 Route::any('{catchall}', function () {

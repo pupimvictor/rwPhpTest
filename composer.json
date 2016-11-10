@@ -51,6 +51,8 @@
     "preferred-install": "dist"
   },
   "psr-4": {
-    "App\\": "app/"
+    "App\\": "app/",
+    "App\\Services\\":"app/Services"
   }
+
 }

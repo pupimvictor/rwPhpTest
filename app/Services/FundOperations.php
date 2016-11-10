@@ -11,7 +11,7 @@ namespace App\Services;
 
 class FundOperations
 {
-    public function calculateRisk($fundId){
+    public static function calculateRisk($fundId){
         return 0;
     }
 }
